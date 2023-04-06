@@ -1,0 +1,376 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+/* header */
+
+.page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-btn-mobile {
+    display: none;
+}
+
+.unstable-menu {
+    margin-left: 120px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.site-nav .link.current {
+    position: relative;
+    color: var(--accent-port-color);
+}
+
+.site-nav .link::after,
+.site-nav .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-port-color);
+    border-radius: 2px;
+    transform: scale(0, 0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .site-nav .link:hover::after,
+.site-nav .link:focus::after {
+    transform: scale(1, 1);
+} */
+
+.site-nav .link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-port-color);
+    border-radius: 2px;
+    transform: scale(1);
+}
+
+.site-nav .link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration-line: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.ping {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-decoration-line: none;
+}
+
+.address-nav .ping:hover,
+.address-nav .ping:focus {
+    color: var(--accent-color);
+}
+
+.address-nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.contact-address {
+    margin-left: auto;
+}
+
+/* Modal */
+
+.modal {
+    width: 408px;
+    min-height: 586px;
+}
+
+
+/* Hero */
+
+
+.hero {
+    /* max-width: 768px; */
+    height: 436px;
+    background-image: var(--l-gra), url(../images/hero-tab-bg\ \(1\).jpg);
+    
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: var(--l-gra), url(../images/people-office-tab-2x.jpg);
+
+    }
+}
+
+.hero-title {
+    margin: 0 auto 36px;
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+       
+}
+
+/* Obligations */
+
+.obligations-list.list {
+    display: flex;
+    
+}
+
+
+/* What are we doing */
+
+.work {
+    display: none;
+}
+
+/* Our Team */
+
+.team-list.list {
+    display: flex;
+    text-align: center;
+}
+
+
+/* Customers */
+
+.customers-list {
+    gap: 24px;
+}
+
+.customers-item {
+    width: calc((100% - 96px) / 3);
+    
+}
+
+/* Footer */
+
+.logo.foot-part {
+    text-align: start;
+}
+
+.footer-socials {
+    margin: 0 auto 72px 0;
+}
+
+.footer-soc-title {
+    margin-left: 0;
+    text-align: start;
+}
+
+.subscribe-label {
+    margin-right: 24px;
+}
+
+/* Portfolio */
+
+.row-list.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+/* Header */
+    
+.item.telephone {
+    margin-top: 12px;
+}
+
+/* Obligations */
+
+.obligations-list {
+    flex-wrap: wrap;
+}
+
+.obligations-list .item {
+    max-width: calc((100% - 24px)/2);
+}
+
+.obligations-list .item+.item:not(:nth-child(2n+1)) {
+    margin-left: 24px;
+}
+
+.obligations-list .item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+/* Our Team */
+
+.team-list.list {
+    flex-wrap: wrap;
+}
+
+.team-list .item+.item:not(:nth-child(2n+1)) {
+    margin-left: 24px;
+    margin-right: auto;
+}
+
+.team-list .item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 64px;
+}
+
+.team-list .item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.team-list .item:nth-child(2n+1) {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Customers */
+
+.customers-list {
+    max-width: 552px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.customers-item {
+    width: calc((100% - 24px * 2)/3);
+}
+
+.customers-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.customers-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+.foot-info {
+    flex-wrap: wrap;
+}
+
+.footer-inner {
+    margin: 0 24px 72px 0;
+}
+
+.subscribe-label input {
+    min-width: 264px;
+}
+
+.subscribe-form {
+    margin-right: auto;
+}
+
+.container.foot-info {
+    max-width: calc(552px + (15px *2));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Portfolio */
+
+.section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.btn-list.list {
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.portfolio-cover-wrap img {
+    width: 100%;
+}
+
+.row-list .element {
+    width: calc((100% - (24px * 2))/2);
+}
+
+.row-list .element:not(:nth-last-child(-n+2)) {
+    margin-bottom: 72px;
+}
+
+
+.row-list .element:not(:nth-child(2n)) {
+    margin-right: 24px;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .obligations-list .title {
+        text-align: left;
+    }
+}
+
+
+
+@media (min-device-pixel-ratio: 1),
+(-webkit-min-device-pixel-ratio: 1),
+(-o-min-device-pixel-ratio: 1/1),
+(min-resolution: 96dpi),
+(min-resolution: 1dppx) {
+    .hero {
+        background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+        background-color: var(--title-text-color);
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-tab-2x.jpg);
+        background-color: var(--title-text-color);
+    }
+}
+}
+
+
