@@ -68,9 +68,9 @@
     border-bottom: 1px solid #E7E9FC;
 }
 
-/* img {
+.img {
     display: block;
-} */
+}
 
 
 /* logotype */
@@ -1029,24 +1029,6 @@
 }
 
 
-
-/* .row-list .element:nth-child(3n) {
-    margin-right: 0;
-} */
-
-/* .row-list .element:nth-last-child(-n + 3) {} */
-
-
-/* .row-list .element .img {
-    display: block;
-    max-width: 100%;
-} */
-
-
-/* .btn-list .element+.element {
-    margin-left: 24px;
-} */
-
 /* Row */
 
 .row-list .frame {
@@ -1054,23 +1036,12 @@
     margin: 0;
     border: 1px solid var(--primary-logo-color);
     border-top: none;
-
-    /* display: block;
-    max-width: 100%;
-    height: auto; */
       
 }
 
 .row-list .title {
     text-align: start;
-    /* font-family: 'Roboto';
-    font-style: normal;
-    margin: 0;
-    margin-bottom: 8px;
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2; */
+   
 }
 
 .portfolio-cover-inner {
@@ -1083,7 +1054,6 @@
     width: 360px;
     height: 300px;
     padding: 40px 32px 164px;
-    /* padding: 40px 32px; */
     background-color: var(--accent-color);
     color: var(--primary-cloud-color);
     height: 100%;
@@ -1095,18 +1065,8 @@
     display: block;
     color: var(--primary-text-color);
     text-decoration-line: none;
-    /* text-decoration: none; */
+    
 }
-
-/* .element .portfolio-soc-link:hover,
-.element .portfolio-soc-link:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
-
-/* .element .portfolio-soc-link:hover .portfolio-cover-inner,
-.element .portfolio-soc-link:focus .portfolio-cover-inner {
-    transform: translateY(0);
-} */
 
 .portfolio-soc-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -1135,26 +1095,3 @@
     overflow: hidden;
 }
 
-
-
-/* .row-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-} */
-
-/* .row-list .flex {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-/* .row-list .text {
-    font-family: 'Roboto';
-    font-style: normal;
-    margin: 0;
-    color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-} */
- 
